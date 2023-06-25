@@ -2,14 +2,50 @@
 
 <html>
 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./script.js">
 </script>
+
+<div id="carouselExample" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" id="myCarousel">
+    <div class="carousel-item active first-slide">
+      <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450__340.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item second-slide">
+      <img class="d-block w-100" src="data:image/jpeg;base64,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" alt="Second slide">
+    </div>
+    <div class="carousel-item third-slide">
+      <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450__340.jpg" alt="Third slide">
+    </div>
+	  <div class="carousel-item fourth-slide">
+      <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450__340.jpg" alt="Third slide">
+	  </div>
+		<div class="carousel-item fifth-slide">
+      <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450__340.jpg" alt="Third slide">
+		</div>
+  </div>
+  <a class="carousel-control-prev glyphicon-chevron-left " role="button" data-bs-target="#carouselExample" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next glyphicon-chevron-right"  role="button" data-bs-target="#carouselExample"data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
 
 </body>
 
